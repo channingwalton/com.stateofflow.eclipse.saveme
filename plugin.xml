@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.stateofflow.eclipse.saveme.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.eclipse.ui.preferencePages.Editors"
+            class="com.stateofflow.eclipse.saveme.preferences.SaveMePreferencePage"
+            id="com.stateofflow.eclipse.saveme.preferences.SaveMePreferencePage"
+            name="Save Me">
+         <keywordReference
+               id="com.stateofflow.eclipse.saveme.editor">
+         </keywordReference>
+         <keywordReference
+               id="com.stateofflow.eclipse.saveme.save">
+         </keywordReference>
+         <keywordReference
+               id="com.stateofflow.eclipse.saveme.autosave">
+         </keywordReference>
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+   </extension>
+   <extension
+         id="com.stateofflow.eclipse.saveme.keywords"
+         name="SaveMe Keywords"
+         point="org.eclipse.ui.keywords">
+      <keyword
+            id="com.stateofflow.eclipse.saveme.editor"
+            label="editor">
+      </keyword>
+      <keyword
+            id="com.stateofflow.eclipse.saveme.save"
+            label="save">
+      </keyword>
+      <keyword
+            id="com.stateofflow.eclipse.saveme.autosave"
+            label="autosave">
+      </keyword>
+   </extension>
+
+</plugin>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SaveMe
+Bundle-SymbolicName: com.stateofflow.eclipse.saveme;singleton:=true
+Bundle-Version: 1.0.3.qualifier
+Bundle-Activator: com.stateofflow.eclipse.saveme.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Eclipse-LazyStart: true
+Bundle-Vendor: Channing Walton
