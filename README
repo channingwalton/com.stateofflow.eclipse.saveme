@@ -1,8 +1,8 @@
-h3.Help
+# Help
 
 I am not maintaining this any more really, so if someone would like to take it on that would be great.
 
-h3.Overview
+# Overview
 
 The Eclipse Save Me plugin is a very small Eclipse plugin that will save an unsaved editor when the editor loses focus.
 
